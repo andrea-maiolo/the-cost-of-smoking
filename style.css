@@ -35,13 +35,7 @@ select {
 	width: 50%;
 	height: 2.75em;
 }
-
-body{
-    background-color: rgb(7, 19, 129);
-}
-p{
-    color :white;
-}
+body,
 input,
 select,
 textarea {
