@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+
+#calculation {
+	-webkit-appearance: none;
+	appearance: none;
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	background-color: #5a5a5a;
+	border-radius: 0;
+	border: 0;
+	color: #ffffff !important;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 600;
+	height: 2.85em;
+	line-height: 2.95em;
+	padding: 0 1.5em;
+	text-align: center;
+	text-decoration: none;
+}
+
+#calculation:hover {
+	background-color: #676767;
+}
+
+select {
+	-webkit-appearance: none;
+	appearance: none;
+	background: rgb(144, 189, 226);
+	border: solid 1px #dbdbdb;
+	display: block;
+	padding: 0 1em;
+	width: 50%;
+	height: 2.75em;
+}
+
+body{
+    background-color: rgb(7, 19, 129);
+}
+p{
+    color :white;
+}
+input,
+select,
+textarea {
+	color: #000000;
+	font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
