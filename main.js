@@ -8,7 +8,7 @@ var min = 1,
     calculation = document.querySelector('#calculation');
     calculation.addEventListener('click', calculate);
     currency = document.querySelector('#currency');
-    
+    const para = document.createElement('p');
 
 for (var i = min; i <= max; i++) {
 	var opt = document.createElement('option');
@@ -44,8 +44,20 @@ function calculate() {
 	let x = (ciggySmoked.value * timeSmoking) / frequency.value;
 	let a = x / cigarettes.value;
 	let total = a * costPack.value;
-    const para = document.createElement('p');
-    para.setAttribute('id','totalAmount');
+	para.style.fontWeight='700';
+	para.style.fontSize='20px';
+	para.style.color='rgb(3, 43, 77)'
+	para.setAttribute('id','totalAmount');
 	para.textContent = 'You have spent '+total + ' ' + currency.value +' till now';
-    result.appendChild(para);
+	result.appendChild(para);
+	if(para.display == true){ 
+	
+	reset()
+	}else{
+		return
+	}
+}
+
+function reset(){
+	result.removeChild(para);
 }
