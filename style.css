@@ -2,44 +2,69 @@
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
 
-#calculation {
-	-webkit-appearance: none;
-	appearance: none;
-	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-	background-color: #5a5a5a;
-	border-radius: 0;
-	border: 0;
-	color: #ffffff !important;
-	cursor: pointer;
-	display: inline-block;
-	font-weight: 600;
-	height: 2.85em;
-	line-height: 2.95em;
-	padding: 0 1.5em;
-	text-align: center;
-	text-decoration: none;
+button {
+    background-color: #5a5a5a;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    height: 2.85em;
+    padding: 0 1.5em;
+    text-align: center;
 }
 
-#calculation:hover {
-	background-color: #676767;
+
+button:hover {
+    background-color: #676767;
 }
 
 select {
-	-webkit-appearance: none;
-	appearance: none;
-	background: rgb(144, 189, 226);
-	border: solid 1px #dbdbdb;
-	display: block;
-	padding: 0 1em;
-	width: 50%;
-	height: 2.75em;
+    background: #90bde2;
+    border: solid 1px #dbdbdb;
+    padding: 0 1em;
+    width: 100%;
+    height: 2.75em;
 }
-body,
+
+#howmuchdoyoupayandwhichcurrency {
+    flex: 1;
+}
+
+#howmanycigarettesinapack {
+    flex: 1;
+}
+
+#howmanycigarettesdoyousmoke {
+    flex: 1;
+}
+
+#howmanyyearshaveyoubeensmoking {
+    flex: 1;
+}
+
+#result {
+    flex: 1;
+    margin-top: 10px;
+    margin-left: -30px;
+    ;
+}
+
+#selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+body {
+    background-color: #e2b590;
+}
+
 input,
 select,
 textarea {
-	color: #000000;
-	font-family: "Raleway", Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
     font-size: 13px;
 }
